@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #0f111a;
+  color: #d4d4d4;
+  font-family: "Fira Code", monospace;
+  padding: 2rem;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.terminal {
+  background: #1e1e1e;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  max-width: 800px;
+  width: 100%;
+}
+.terminal::before {
+  content: "funzy@dev:~$";
+  color: #4ec9b0;
+  margin-right: 0.5rem;
+}
+.line {
+  line-height: 1.6;
+}
+.keyword {
+  color: #569cd6;
+}
+.type {
+  color: #4ec9b0;
+}
+.string {
+  color: #d69d85;
+}
+.comment {
+  color: #6a9955;
+}
+.highlight {
+  background-color: #264f78;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+}
